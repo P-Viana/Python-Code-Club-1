@@ -17,3 +17,5 @@ soma = num + num2
 subtracao = num - num2
 divisao = num / num2
 multiplicacao = num * num2
+
+print(f"Soma: {soma}\n\nSubtração: {subtracao}\n\nDivisão: {divisao}\n\nMultilpicação: {multiplicacao}")
