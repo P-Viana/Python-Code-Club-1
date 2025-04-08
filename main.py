@@ -8,14 +8,22 @@
 num = int(input("Digite o número que você desejar!"))
 num2 = int(input("Digite outro número!"))
 
-if num > num2:
-    print(f"O número {num} é maior que {num2}!")
+if num2 == 0:
+    print("ERRO!\nERRO!")
 else:
-    print(f"O número {num2} é maior que {num}!")
+    if num > num2:
+        print(f"O número {num} é maior que {num2}!")
+    elif num < num2:
+        print(f"O número {num2} é maior que {num}!")
+    else:
+        print("Os números são iguais!")
 
 soma = num + num2
 subtracao = num - num2
-divisao = num / num2
 multiplicacao = num * num2
 
-print(f"Soma: {soma}\n\nSubtração: {subtracao}\n\nDivisão: {divisao}\n\nMultilpicação: {multiplicacao}")
+if num2 == 0:
+    print("ERRO!\nDigite o segundo número sem ser 0!\nERRO!")
+else:
+    divisao = num / num2
+    print(f"Soma: {soma}\n\nSubtração: {subtracao}\n\nDivisão: {divisao}\n\nMultilpicação: {multiplicacao}")
